@@ -86,7 +86,7 @@ def car_out(car_num) :
         cost = fee_per_min*np.ceil(time.seconds//60/10)*10
         print(f"{int(cost)}원")
     parking[parking_log[car_num][0][0]][parking_log[car_num][0][1]] = 0
-    parking_log[car_num][3] = 1
+    parking_log[car_num][3] = 0
 
 while True :
     display()
